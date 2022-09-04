@@ -9,13 +9,15 @@ import javax.swing.JOptionPane;
 
 public class Validation {
 	public static void main(String[] args) {
-		
+		int count = 0;
+		 while ( count < 10 ) {
 		Random randomMaker = new Random();
 		
 		int randomNumber = randomMaker.nextInt(5);
 		
 		System.out.println(randomNumber);
-
+		count += 1;
+		 }
 		// 1. Use each value of randomNumber to give the user a random compliment.
 
 		// 2. Repeat all the code above 10 times
