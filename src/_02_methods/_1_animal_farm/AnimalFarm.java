@@ -21,23 +21,41 @@ public class AnimalFarm {
 	
 	public static void main(String[] args) {
 		new AnimalFarm().animals();
-	}
 	
+	}
 	void animals() {
 
 		/* 1. Ask the user which animal they want, then see and hear 
 		 *    the animal they chose using one of the methods below.
 		*/			 
-			
+int count = 0;	
+while(count < 5) {
 		/* 2. Make it so that the user can keep entering new animals. */
+String farm = JOptionPane.showInputDialog("What animal do you want to see?");
 
+if(farm.equals("Cow")) {
+moo();
+count += 1;
+} else if(farm.equals("Duck")) {
+quack();
+count += 1;
+} else if(farm.equals("Dog")) {
+woof();
+count += 1;
+} else if(farm.equals("Cat")) {
+meow();
+count += 1;
+} else if(farm.equals("Llama")) {
+llamaScream();
+count += 1;
+} else JOptionPane.showMessageDialog(null,"We don't have a "+ farm + ".");
+}
 	}
-
+	 
 	void moo() {
 		playNoise(mooFile);
 		showImage(cowIcon);
 	}
-
 	void quack() {
 		playNoise(quackFile);
 		showImage(duckIcon);
