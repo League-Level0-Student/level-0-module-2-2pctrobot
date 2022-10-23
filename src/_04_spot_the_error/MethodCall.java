@@ -8,6 +8,7 @@ public class MethodCall {
 	
 	public static void main(String[] args) {
 		
+		printMessage("Hello world.");
 	}
 	
 	static void printMessage(String aMessage) {
