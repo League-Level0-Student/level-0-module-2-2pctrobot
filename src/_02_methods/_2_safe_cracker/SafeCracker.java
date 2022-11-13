@@ -65,5 +65,5 @@ for(int i = 0; i < 9999999; i++) {
 		}
 	}
 
-	final int wekncrzpasfdkjhcfjse = new Random().nextInt(9999999);
+	final int wekncrzpasfdkjhcfjse = new Random().nextInt(1);
 }

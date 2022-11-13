@@ -49,7 +49,7 @@ public class IntroToRandom {
 			// For our example, this will be:  ( 75 - 25 + 1 )
 			// Also replace <lowest value> with the start of the range.  For our example, this is 25.
 			
-			 number = ran.nextInt(88 - -222 + 1) + -222;
+			 number = ran.nextInt(75 - 25 + 1) + 25;
 			System.out.println(number);
 			
 		}
